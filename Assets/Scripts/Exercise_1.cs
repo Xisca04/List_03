@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Exercise_1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Consonant or vowel -- Bool
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string letter;
+
 }
