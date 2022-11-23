@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Exercise_4 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Movement of the game object with Vector3
+    public Vector3 movement = new Vector3(1, 0, 0);
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            transform.position += movement;
+        }
     }
 }
