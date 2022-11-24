@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Exercise_10 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Increase the scale by one unit all the axes
+
+    public Vector3 bigger = new Vector3(1,1,1);
+
+    private void Scale()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            transform.localScale += bigger;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Scale();
     }
 }

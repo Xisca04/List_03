@@ -4,8 +4,26 @@ using UnityEngine;
 
 public class Exercise_1 : MonoBehaviour
 {
-    // Consonant or vowel -- Bool
+    // Is vowel or consonant
 
     public string letter;
+    private bool isVowel = true;
+    private bool isConsonant;
+    
+    private void isVowelorConsonant()
+    {
+        if(letter == "a" || letter == "e"|| letter == "i" || letter == "o" || letter == "u")
+        {
+            Debug.Log(isVowel);
+        }
+        else
+        {
+            Debug.Log(isConsonant);
+        }
+    }
 
+    private void Start()
+    {
+        isVowelorConsonant();
+    }
 }
