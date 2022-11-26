@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Exercise_2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // Number is even or not
+
+    public int number;
+
+    private void EvenNumber()
     {
-        
+        if ( number % 2 == 0)
+        {
+            Debug.Log($"The number {number} is even.");
+        }
+        else
+        {
+            Debug.Log($"The number {number} is not even.");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        EvenNumber();
     }
+    
 }

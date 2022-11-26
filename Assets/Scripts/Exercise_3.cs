@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class Exercise_3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // The division is exact or not
+
+    public int dividend;
+    public int divisor;
+
+    private void Division()
     {
-        
+        if (dividend % divisor == 0)
+        {
+            Debug.Log($"The division of {dividend} / {divisor} is exact.");
+        }
+        else
+        {
+            Debug.Log($"The division of {dividend} / {divisor} is not exact.");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Division();
     }
+    
 }
